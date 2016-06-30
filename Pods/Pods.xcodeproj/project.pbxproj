@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0589FC4A41626B9E7EC549538353D148 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		0F0C6BEE4806812A203BD03A8D2D1AC8 /* ZHNdiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 643744E9194AEFCB46CF1D9F7A393E60 /* ZHNdiskCache.m */; };
+		172D51967D7D6EDD5E4DA5F41E66B652 /* ZHNunlimitedCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C7F7820DFB67E6C633A21D59396C262 /* ZHNunlimitedCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2392C4D16F81727F8CB80275EDA92212 /* UIImageView+ZHNimageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0069BB1F98FC9A22B85A3AEA03369C /* UIImageView+ZHNimageCache.m */; };
+		29F6B528B3C513743D99224E574430FE /* ZHNdiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 484FD5AF41B17BB5F982B358CB134B5C /* ZHNdiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		320B10C5E24AA9A08EB35E0999CE2123 /* ZHNwebImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 409AECF7FC774CA0A51B3CF001798BF0 /* ZHNwebImageOperation.m */; };
+		3914E0DB93480AF27E7924DE16EBA013 /* ZHNwebImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 987597A0606F8D512C604E56774C524E /* ZHNwebImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C43FB92635918E790E35AACB08A7F03 /* UIImageView+ZHNimage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2561F7BB7B21159A52A5FCE25278D888 /* UIImageView+ZHNimage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A172BA43EF055BDD02D9A8BFC5712DC /* ZHNunlimitedCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 403689DA70BEDEB53318593A93064AAC /* ZHNunlimitedCarouselView.m */; };
+		721AFDBE54E85EF4014889C141602B75 /* ZHNmemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D438316955A32CE531FBBDA988FDF8D9 /* ZHNmemoryCache.m */; };
+		86DCA7F60FE4236F0A4DED3F7982A7E7 /* UIImageView+ZHNimage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F01CCF15ED89AC186A0AF7A8A6A9319 /* UIImageView+ZHNimage.m */; };
+		8AC591F0480F1B80403DF10BFD55C977 /* ZHNunlimitedCarouselView.h in Headers */ = {isa = PBXBuildFile; fileRef = 56EEEB6D83CD3F7E7401135934997D3D /* ZHNunlimitedCarouselView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EA2A73389745810B590666878F2AE17 /* ZHNimageDownLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB08310534B337BEF07613A463C9DC6 /* ZHNimageDownLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		966C0B99110A8253007D280B87A284AE /* UIImageView+ZHNimageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FF03BC461F532480F6F061C1D8D83079 /* UIImageView+ZHNimageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3B6BDA9A0D2E2BE11EB033A0CB8C49E /* Pods-bantang-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E72B9FE147782EE2E7211DC0BB11F8 /* Pods-bantang-dummy.m */; };
+		BC32BE9A5EDBE95BA7699AE00F6878EC /* ZHNunlimitedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2842FF4643D6C4D8463729C291A43DA /* ZHNunlimitedCell.m */; };
+		BF4714BE1D297239FBE0D66C6BE5ADAB /* ZHNimageDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E028699020AF54559AFAD037C0B8BC5E /* ZHNimageDownLoader.m */; };
+		C1CC17F419D8F28B846BB33A4F84B52C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		C42028C751E9F55DB1F903675A790318 /* ZHNwebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 04DBCE4AFDFE21207AE8CE0B32DAA02C /* ZHNwebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2BC03F8121F86DB3BB0B96A2F3B24A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		E1582988FE7574C252A9B4D7CA0A2F73 /* ZHNunlimitedCarouselView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBE923D628CDA7650EEC34D7FD804FC /* ZHNunlimitedCarouselView-dummy.m */; };
+		E6A9654009E94C86FD53BC89C66C0614 /* ZHNmemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 419764F384C1FADBF5986EF623C5009C /* ZHNmemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB1680FA931C6B444DF6058AD9BA5AB7 /* ZHNwebImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A13543B70E80C1272634A89167A5E2 /* ZHNwebImageCache.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E4B7DBB25068ECF03F101467B972B44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83EA15F72DA3EAF1BF56907071721C90;
+			remoteInfo = ZHNunlimitedCarouselView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044A5B83D76A64899C14476E11548842 /* Pods-bantang-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-bantang-acknowledgements.plist"; sourceTree = "<group>"; };
+		04DBCE4AFDFE21207AE8CE0B32DAA02C /* ZHNwebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZHNwebImageOperation.h; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNwebImageOperation.h; sourceTree = "<group>"; };
+		1730CC3B25FCD12E51A376F48872F86F /* libZHNunlimitedCarouselView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZHNunlimitedCarouselView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2561F7BB7B21159A52A5FCE25278D888 /* UIImageView+ZHNimage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+ZHNimage.h"; path = "ZHNCarouselView/ZHNunlimitedCarouselView/UIImageView+ZHNimage.h"; sourceTree = "<group>"; };
+		2C13ECB315BB94D04B32A2A17696ED4A /* Pods-bantang-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-bantang-frameworks.sh"; sourceTree = "<group>"; };
+		3E0FA3697D23B33F23BC48400A7BF955 /* Pods-bantang-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-bantang-resources.sh"; sourceTree = "<group>"; };
+		403689DA70BEDEB53318593A93064AAC /* ZHNunlimitedCarouselView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZHNunlimitedCarouselView.m; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNunlimitedCarouselView.m; sourceTree = "<group>"; };
+		409AECF7FC774CA0A51B3CF001798BF0 /* ZHNwebImageOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZHNwebImageOperation.m; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNwebImageOperation.m; sourceTree = "<group>"; };
+		419764F384C1FADBF5986EF623C5009C /* ZHNmemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZHNmemoryCache.h; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNmemoryCache.h; sourceTree = "<group>"; };
+		484FD5AF41B17BB5F982B358CB134B5C /* ZHNdiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZHNdiskCache.h; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNdiskCache.h; sourceTree = "<group>"; };
+		4F01CCF15ED89AC186A0AF7A8A6A9319 /* UIImageView+ZHNimage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+ZHNimage.m"; path = "ZHNCarouselView/ZHNunlimitedCarouselView/UIImageView+ZHNimage.m"; sourceTree = "<group>"; };
+		56EEEB6D83CD3F7E7401135934997D3D /* ZHNunlimitedCarouselView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZHNunlimitedCarouselView.h; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNunlimitedCarouselView.h; sourceTree = "<group>"; };
+		643744E9194AEFCB46CF1D9F7A393E60 /* ZHNdiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZHNdiskCache.m; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNdiskCache.m; sourceTree = "<group>"; };
+		6D7D65936F793745E541112D7FF09FEB /* Pods-bantang-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-bantang-acknowledgements.markdown"; sourceTree = "<group>"; };
+		70DD149E6BA4FE60B7827AEF27A9839B /* ZHNunlimitedCarouselView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZHNunlimitedCarouselView-prefix.pch"; sourceTree = "<group>"; };
+		73E72B9FE147782EE2E7211DC0BB11F8 /* Pods-bantang-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-bantang-dummy.m"; sourceTree = "<group>"; };
+		7C7F7820DFB67E6C633A21D59396C262 /* ZHNunlimitedCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZHNunlimitedCell.h; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNunlimitedCell.h; sourceTree = "<group>"; };
+		7D0069BB1F98FC9A22B85A3AEA03369C /* UIImageView+ZHNimageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+ZHNimageCache.m"; path = "ZHNCarouselView/ZHNunlimitedCarouselView/UIImageView+ZHNimageCache.m"; sourceTree = "<group>"; };
+		80BC5B3123F63E8AE867767C25FD4BA1 /* Pods-bantang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bantang.release.xcconfig"; sourceTree = "<group>"; };
+		85A13543B70E80C1272634A89167A5E2 /* ZHNwebImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZHNwebImageCache.m; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNwebImageCache.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		987597A0606F8D512C604E56774C524E /* ZHNwebImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZHNwebImageCache.h; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNwebImageCache.h; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AAAA87428167081A4A2C8F8ED6C3E860 /* Pods-bantang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bantang.debug.xcconfig"; sourceTree = "<group>"; };
+		AEBE923D628CDA7650EEC34D7FD804FC /* ZHNunlimitedCarouselView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZHNunlimitedCarouselView-dummy.m"; sourceTree = "<group>"; };
+		B2842FF4643D6C4D8463729C291A43DA /* ZHNunlimitedCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZHNunlimitedCell.m; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNunlimitedCell.m; sourceTree = "<group>"; };
+		B530ADF56360BDBC1B631FA67DBF7185 /* libPods-bantang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bantang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D438316955A32CE531FBBDA988FDF8D9 /* ZHNmemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZHNmemoryCache.m; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNmemoryCache.m; sourceTree = "<group>"; };
+		DAB08310534B337BEF07613A463C9DC6 /* ZHNimageDownLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZHNimageDownLoader.h; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNimageDownLoader.h; sourceTree = "<group>"; };
+		E028699020AF54559AFAD037C0B8BC5E /* ZHNimageDownLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZHNimageDownLoader.m; path = ZHNCarouselView/ZHNunlimitedCarouselView/ZHNimageDownLoader.m; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F0D528C36A9C6345DBB1FF0EA3B74231 /* ZHNunlimitedCarouselView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZHNunlimitedCarouselView.xcconfig; sourceTree = "<group>"; };
+		FF03BC461F532480F6F061C1D8D83079 /* UIImageView+ZHNimageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+ZHNimageCache.h"; path = "ZHNCarouselView/ZHNunlimitedCarouselView/UIImageView+ZHNimageCache.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5493444A84467AFA207F15EB492C3B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0589FC4A41626B9E7EC549538353D148 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B720D1FF4D163A65A5073574F70A0C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1CC17F419D8F28B846BB33A4F84B52C /* Foundation.framework in Frameworks */,
+				D2BC03F8121F86DB3BB0B96A2F3B24A7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02E69997E7B99E3AACFD845F51BBF81B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82AAECED9AE1D1CB8059A77BA633E87D /* ZHNunlimitedCarouselView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0F67151FF7D2182FD82FAD301AE1E8FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0D528C36A9C6345DBB1FF0EA3B74231 /* ZHNunlimitedCarouselView.xcconfig */,
+				AEBE923D628CDA7650EEC34D7FD804FC /* ZHNunlimitedCarouselView-dummy.m */,
+				70DD149E6BA4FE60B7827AEF27A9839B /* ZHNunlimitedCarouselView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZHNunlimitedCarouselView";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				02E69997E7B99E3AACFD845F51BBF81B /* Pods */,
+				9AAC8597905979CF10566F8E87F50C85 /* Products */,
+				9655764B2CA302837C8CF4CF5776F3BE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		82AAECED9AE1D1CB8059A77BA633E87D /* ZHNunlimitedCarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				2561F7BB7B21159A52A5FCE25278D888 /* UIImageView+ZHNimage.h */,
+				4F01CCF15ED89AC186A0AF7A8A6A9319 /* UIImageView+ZHNimage.m */,
+				FF03BC461F532480F6F061C1D8D83079 /* UIImageView+ZHNimageCache.h */,
+				7D0069BB1F98FC9A22B85A3AEA03369C /* UIImageView+ZHNimageCache.m */,
+				484FD5AF41B17BB5F982B358CB134B5C /* ZHNdiskCache.h */,
+				643744E9194AEFCB46CF1D9F7A393E60 /* ZHNdiskCache.m */,
+				DAB08310534B337BEF07613A463C9DC6 /* ZHNimageDownLoader.h */,
+				E028699020AF54559AFAD037C0B8BC5E /* ZHNimageDownLoader.m */,
+				419764F384C1FADBF5986EF623C5009C /* ZHNmemoryCache.h */,
+				D438316955A32CE531FBBDA988FDF8D9 /* ZHNmemoryCache.m */,
+				56EEEB6D83CD3F7E7401135934997D3D /* ZHNunlimitedCarouselView.h */,
+				403689DA70BEDEB53318593A93064AAC /* ZHNunlimitedCarouselView.m */,
+				7C7F7820DFB67E6C633A21D59396C262 /* ZHNunlimitedCell.h */,
+				B2842FF4643D6C4D8463729C291A43DA /* ZHNunlimitedCell.m */,
+				987597A0606F8D512C604E56774C524E /* ZHNwebImageCache.h */,
+				85A13543B70E80C1272634A89167A5E2 /* ZHNwebImageCache.m */,
+				04DBCE4AFDFE21207AE8CE0B32DAA02C /* ZHNwebImageOperation.h */,
+				409AECF7FC774CA0A51B3CF001798BF0 /* ZHNwebImageOperation.m */,
+				0F67151FF7D2182FD82FAD301AE1E8FD /* Support Files */,
+			);
+			path = ZHNunlimitedCarouselView;
+			sourceTree = "<group>";
+		};
+		9655764B2CA302837C8CF4CF5776F3BE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAC920110A2A8502387E962756030365 /* Pods-bantang */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9AAC8597905979CF10566F8E87F50C85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B530ADF56360BDBC1B631FA67DBF7185 /* libPods-bantang.a */,
+				1730CC3B25FCD12E51A376F48872F86F /* libZHNunlimitedCarouselView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAC920110A2A8502387E962756030365 /* Pods-bantang */ = {
+			isa = PBXGroup;
+			children = (
+				6D7D65936F793745E541112D7FF09FEB /* Pods-bantang-acknowledgements.markdown */,
+				044A5B83D76A64899C14476E11548842 /* Pods-bantang-acknowledgements.plist */,
+				73E72B9FE147782EE2E7211DC0BB11F8 /* Pods-bantang-dummy.m */,
+				2C13ECB315BB94D04B32A2A17696ED4A /* Pods-bantang-frameworks.sh */,
+				3E0FA3697D23B33F23BC48400A7BF955 /* Pods-bantang-resources.sh */,
+				AAAA87428167081A4A2C8F8ED6C3E860 /* Pods-bantang.debug.xcconfig */,
+				80BC5B3123F63E8AE867767C25FD4BA1 /* Pods-bantang.release.xcconfig */,
+			);
+			name = "Pods-bantang";
+			path = "Target Support Files/Pods-bantang";
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0915D1DF13A271A2B81E25CE4AF5C374 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C43FB92635918E790E35AACB08A7F03 /* UIImageView+ZHNimage.h in Headers */,
+				966C0B99110A8253007D280B87A284AE /* UIImageView+ZHNimageCache.h in Headers */,
+				29F6B528B3C513743D99224E574430FE /* ZHNdiskCache.h in Headers */,
+				8EA2A73389745810B590666878F2AE17 /* ZHNimageDownLoader.h in Headers */,
+				E6A9654009E94C86FD53BC89C66C0614 /* ZHNmemoryCache.h in Headers */,
+				8AC591F0480F1B80403DF10BFD55C977 /* ZHNunlimitedCarouselView.h in Headers */,
+				172D51967D7D6EDD5E4DA5F41E66B652 /* ZHNunlimitedCell.h in Headers */,
+				3914E0DB93480AF27E7924DE16EBA013 /* ZHNwebImageCache.h in Headers */,
+				C42028C751E9F55DB1F903675A790318 /* ZHNwebImageOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		83EA15F72DA3EAF1BF56907071721C90 /* ZHNunlimitedCarouselView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 752799A9463645A0443893649DBB287B /* Build configuration list for PBXNativeTarget "ZHNunlimitedCarouselView" */;
+			buildPhases = (
+				60EF0E8831A9E390858030CEDA677816 /* Sources */,
+				8B720D1FF4D163A65A5073574F70A0C0 /* Frameworks */,
+				0915D1DF13A271A2B81E25CE4AF5C374 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZHNunlimitedCarouselView;
+			productName = ZHNunlimitedCarouselView;
+			productReference = 1730CC3B25FCD12E51A376F48872F86F /* libZHNunlimitedCarouselView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		842C0FB733897565DC8DD1E14E5DD4C7 /* Pods-bantang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2B6BDAB0C1B2BA195589F7A82C344C /* Build configuration list for PBXNativeTarget "Pods-bantang" */;
+			buildPhases = (
+				1A4A1511C2F8ECA09A91FB38750CB050 /* Sources */,
+				5493444A84467AFA207F15EB492C3B8F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4D9ECF4F42E775FD2AD51580B468D50 /* PBXTargetDependency */,
+			);
+			name = "Pods-bantang";
+			productName = "Pods-bantang";
+			productReference = B530ADF56360BDBC1B631FA67DBF7185 /* libPods-bantang.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9AAC8597905979CF10566F8E87F50C85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				842C0FB733897565DC8DD1E14E5DD4C7 /* Pods-bantang */,
+				83EA15F72DA3EAF1BF56907071721C90 /* ZHNunlimitedCarouselView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A4A1511C2F8ECA09A91FB38750CB050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B6BDA9A0D2E2BE11EB033A0CB8C49E /* Pods-bantang-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60EF0E8831A9E390858030CEDA677816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86DCA7F60FE4236F0A4DED3F7982A7E7 /* UIImageView+ZHNimage.m in Sources */,
+				2392C4D16F81727F8CB80275EDA92212 /* UIImageView+ZHNimageCache.m in Sources */,
+				0F0C6BEE4806812A203BD03A8D2D1AC8 /* ZHNdiskCache.m in Sources */,
+				BF4714BE1D297239FBE0D66C6BE5ADAB /* ZHNimageDownLoader.m in Sources */,
+				721AFDBE54E85EF4014889C141602B75 /* ZHNmemoryCache.m in Sources */,
+				E1582988FE7574C252A9B4D7CA0A2F73 /* ZHNunlimitedCarouselView-dummy.m in Sources */,
+				5A172BA43EF055BDD02D9A8BFC5712DC /* ZHNunlimitedCarouselView.m in Sources */,
+				BC32BE9A5EDBE95BA7699AE00F6878EC /* ZHNunlimitedCell.m in Sources */,
+				FB1680FA931C6B444DF6058AD9BA5AB7 /* ZHNwebImageCache.m in Sources */,
+				320B10C5E24AA9A08EB35E0999CE2123 /* ZHNwebImageOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4D9ECF4F42E775FD2AD51580B468D50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZHNunlimitedCarouselView;
+			target = 83EA15F72DA3EAF1BF56907071721C90 /* ZHNunlimitedCarouselView */;
+			targetProxy = 1E4B7DBB25068ECF03F101467B972B44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5413C21AFE08BD90D3B5DA2D898FF4BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAAA87428167081A4A2C8F8ED6C3E860 /* Pods-bantang.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84FD87D359382A37B07149A12641B965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		92BE5B73092370405C0A7E150A2ED7D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0D528C36A9C6345DBB1FF0EA3B74231 /* ZHNunlimitedCarouselView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZHNunlimitedCarouselView/ZHNunlimitedCarouselView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AF195E55D26C495FCC27AE2848722147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80BC5B3123F63E8AE867767C25FD4BA1 /* Pods-bantang.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EC3B2CD3CA0B353736F17A490CE3FD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0D528C36A9C6345DBB1FF0EA3B74231 /* ZHNunlimitedCarouselView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZHNunlimitedCarouselView/ZHNunlimitedCarouselView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F594C655D48020EC34B00AA63E001773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FD87D359382A37B07149A12641B965 /* Debug */,
+				F594C655D48020EC34B00AA63E001773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		752799A9463645A0443893649DBB287B /* Build configuration list for PBXNativeTarget "ZHNunlimitedCarouselView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92BE5B73092370405C0A7E150A2ED7D3 /* Debug */,
+				EC3B2CD3CA0B353736F17A490CE3FD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC2B6BDAB0C1B2BA195589F7A82C344C /* Build configuration list for PBXNativeTarget "Pods-bantang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5413C21AFE08BD90D3B5DA2D898FF4BD /* Debug */,
+				AF195E55D26C495FCC27AE2848722147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

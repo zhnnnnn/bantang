@@ -1,0 +1,12 @@
+PODS:
+  - ZHNunlimitedCarouselView (1.0.0)
+
+DEPENDENCIES:
+  - ZHNunlimitedCarouselView (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  ZHNunlimitedCarouselView: 442b1efbe6263bbaabf23a652489585f840d0e5d
+
+PODFILE CHECKSUM: 8d26774420160476fe43f091cb88c17f3afae352
+
+COCOAPODS: 1.0.0
