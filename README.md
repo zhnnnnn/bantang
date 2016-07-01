@@ -5,3 +5,6 @@
 物理效果配合手势来自己实现一个uiscrollview的文章。http://eleme.io/mobilists/2016/03/15/%E7%94%A8UIKit-Dynamics%E6%A8%A1%E4%BB%BFUIScrollView/  我今天仔细看了看，我突然间感觉我第一种方式配合着这种手势配合uikit dynamic。就完全可以模仿出联动的效果。。。我尝试着写了写，感觉发现了新大陆啊。。。效果基本上可以以假乱真了，感觉上面的轮播就是加在tableview上面的感觉啊。然后我尝试着封装了一下
 封装的时候还是有点坑的，最重要的是tableview的代理不能再是一对一了。没关系~我以前看到过代理一对多的效果，然后我也自己写过一个工具，这里直接排上用场了。最后在写完轮播下面那个工具条，感觉棒棒的。。。。。学习思考的魅力啊~~~~半糖真是个优秀的app啊。
 
+
+![img](https://raw.githubusercontent.com/zhnnnnn/bantang/master/%E5%8D%8A%E7%B3%96%E6%95%88%E6%9E%9C.gif)
+
