@@ -19,6 +19,7 @@
 		CD756EAA1D251B0D00CD4A15 /* zhnBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD756EA91D251B0D00CD4A15 /* zhnBaseViewController.m */; };
 		CD756EAD1D254F6900CD4A15 /* ceshiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD756EAC1D254F6900CD4A15 /* ceshiViewController.m */; };
 		CD756EB01D25618800CD4A15 /* zhnToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD756EAF1D25618800CD4A15 /* zhnToolView.m */; };
+		CD7B34471D2654E800597279 /* tempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7B34461D2654E800597279 /* tempViewController.m */; };
 		DF146513A3467C1F1A3B7D6A /* libPods-bantang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4D092541D21F1C0CB358F7 /* libPods-bantang.a */; };
 /* End PBXBuildFile section */
 
@@ -63,10 +64,12 @@
 		CD756EA61D25190300CD4A15 /* ZHNContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHNContainerViewController.m; path = ../ZHNContainerViewController.m; sourceTree = "<group>"; };
 		CD756EA81D251B0D00CD4A15 /* zhnBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zhnBaseViewController.h; path = ../zhnBaseViewController.h; sourceTree = "<group>"; };
 		CD756EA91D251B0D00CD4A15 /* zhnBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zhnBaseViewController.m; path = ../zhnBaseViewController.m; sourceTree = "<group>"; };
-		CD756EAB1D254F6900CD4A15 /* ceshiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ceshiViewController.h; path = ../ceshiViewController.h; sourceTree = "<group>"; };
-		CD756EAC1D254F6900CD4A15 /* ceshiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ceshiViewController.m; path = ../ceshiViewController.m; sourceTree = "<group>"; };
+		CD756EAB1D254F6900CD4A15 /* ceshiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshiViewController.h; sourceTree = "<group>"; };
+		CD756EAC1D254F6900CD4A15 /* ceshiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshiViewController.m; sourceTree = "<group>"; };
 		CD756EAE1D25618800CD4A15 /* zhnToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zhnToolView.h; path = ../zhnToolView.h; sourceTree = "<group>"; };
 		CD756EAF1D25618800CD4A15 /* zhnToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zhnToolView.m; path = ../zhnToolView.m; sourceTree = "<group>"; };
+		CD7B34451D2654E800597279 /* tempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tempViewController.h; sourceTree = "<group>"; };
+		CD7B34461D2654E800597279 /* tempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tempViewController.m; sourceTree = "<group>"; };
 		CE8E5524090C186386CC8DFD /* Pods-bantang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bantang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bantang/Pods-bantang.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +134,10 @@
 			children = (
 				CD756DBB1D223CC900CD4A15 /* AppDelegate.h */,
 				CD756DBC1D223CC900CD4A15 /* AppDelegate.m */,
+				CD756EAB1D254F6900CD4A15 /* ceshiViewController.h */,
+				CD756EAC1D254F6900CD4A15 /* ceshiViewController.m */,
+				CD7B34451D2654E800597279 /* tempViewController.h */,
+				CD7B34461D2654E800597279 /* tempViewController.m */,
 				CD756EB11D2568A600CD4A15 /* ZHNcontainerViewController */,
 				CD756DC41D223CC900CD4A15 /* Assets.xcassets */,
 				CD756DC61D223CC900CD4A15 /* LaunchScreen.storyboard */,
@@ -173,8 +180,6 @@
 				CD756EA61D25190300CD4A15 /* ZHNContainerViewController.m */,
 				CD756EAE1D25618800CD4A15 /* zhnToolView.h */,
 				CD756EAF1D25618800CD4A15 /* zhnToolView.m */,
-				CD756EAB1D254F6900CD4A15 /* ceshiViewController.h */,
-				CD756EAC1D254F6900CD4A15 /* ceshiViewController.m */,
 				CD756EA81D251B0D00CD4A15 /* zhnBaseViewController.h */,
 				CD756EA91D251B0D00CD4A15 /* zhnBaseViewController.m */,
 				CD756EA21D25121A00CD4A15 /* delegateContainer.h */,
@@ -264,6 +269,7 @@
 				TargetAttributes = {
 					CD756DB41D223CC900CD4A15 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5V5B3UC44Z;
 					};
 					CD756DCD1D223CC900CD4A15 = {
 						CreatedOnToolsVersion = 7.2;
@@ -378,6 +384,7 @@
 				CD756EB01D25618800CD4A15 /* zhnToolView.m in Sources */,
 				CD756EAD1D254F6900CD4A15 /* ceshiViewController.m in Sources */,
 				CD756DBA1D223CC900CD4A15 /* main.m in Sources */,
+				CD7B34471D2654E800597279 /* tempViewController.m in Sources */,
 				CD756EAA1D251B0D00CD4A15 /* zhnBaseViewController.m in Sources */,
 				CD756EA41D25121A00CD4A15 /* delegateContainer.m in Sources */,
 				CD756EA71D25190300CD4A15 /* ZHNContainerViewController.m in Sources */,
@@ -513,7 +520,9 @@
 			baseConfigurationReference = CE8E5524090C186386CC8DFD /* Pods-bantang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = bantang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhn.bantang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,7 +534,9 @@
 			baseConfigurationReference = 59B8E9ACABFEF2A25E930F1B /* Pods-bantang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = bantang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhn.bantang;
 				PRODUCT_NAME = "$(TARGET_NAME)";

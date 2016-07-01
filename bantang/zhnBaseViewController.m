@@ -21,7 +21,8 @@
     UITableView * backTableView = [[UITableView alloc]init];
     backTableView.contentInset = self.zhn_tableViewEdinsets;
     [self.view addSubview:backTableView];
-    backTableView.frame = self.view.bounds;
+    backTableView.frame = CGRectMake(0, -24, self.view.frame.size.width, self.view.frame.size.height);
+//    backTableView.frame = self.view.bounds;
     backTableView.showsVerticalScrollIndicator = NO;
     self.tableView = backTableView;
     backTableView.dataSource = self;

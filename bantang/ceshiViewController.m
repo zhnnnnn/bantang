@@ -7,7 +7,7 @@
 //
 
 #import "ceshiViewController.h"
-
+#import "tempViewController.h"
 @interface ceshiViewController ()
 
 @end
@@ -16,9 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,6 +40,11 @@
 }
 
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    tempViewController * tempVc = [[tempViewController alloc]init];
+    tempVc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:tempVc animated:YES];
+}
 /*
 #pragma mark - Navigation
 

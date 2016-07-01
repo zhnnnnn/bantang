@@ -7,10 +7,29 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZHNContainerViewController.h"
 
-@interface zhnToolView : UIScrollView
+@protocol zhnToolViewDelegate <NSObject>
+@required
+- (void)zhnToolViewSelectedIndex:(NSInteger)index animate:(BOOL)animate;
+
+
+@end
+
+
+
+@interface zhnToolView : UIView <ZHNcontainerViewControllerDelegate>
 
 + (zhnToolView *)zhnToolViewWithTitleArray:(NSArray *)titileArray;
 
+@property (nonatomic,copy) NSArray * titileArray;
+
+@property (nonatomic,assign) CGFloat commonfontSize;
+
+@property (nonatomic,assign) CGFloat highLightFontSize;
+
+@property (nonatomic,strong) UIColor * tintColor;
+
+@property (nonatomic,weak) id <zhnToolViewDelegate> zhnDelegate;
 
 @end
