@@ -6,5 +6,7 @@
 封装的时候还是有点坑的，最重要的是tableview的代理不能再是一对一了。没关系~我以前看到过代理一对多的效果，然后我也自己写过一个工具，这里直接排上用场了。最后在写完轮播下面那个工具条，感觉棒棒的。。。。。学习思考的魅力啊~~~~半糖真是个优秀的app啊。
 
 
+
+####放张gif 感受一下效果，注意上面的轮播和下面的tableview 和 toolview 是联动的。轮播图上下滑动，tableview也会跟着滑动。
 ![img](https://raw.githubusercontent.com/zhnnnnn/bantang/master/%E5%8D%8A%E7%B3%96%E6%95%88%E6%9E%9C.gif)
 
