@@ -16,11 +16,16 @@
 #define KviewWidth self.view.frame.size.width
 #define KviewHeight self.view.frame.size.height
 
+// toolview 的默认高度
 static const CGFloat KtoolViewHeight = 30;
 
 @interface ZHNContainerViewController ()<UIScrollViewDelegate,UIDynamicAnimatorDelegate,UITableViewDelegate,zhnToolViewDelegate>
 
 @property (nonatomic,weak) UIView * noticeView;
+
+@property (nonatomic,weak) UIScrollView * backScrollView;
+
+@property (nonatomic,weak) UIView * fakeNavibar;
 
 @property (nonatomic,assign) CGFloat contentoffSetY;
 
@@ -30,9 +35,7 @@ static const CGFloat KtoolViewHeight = 30;
 
 @property (nonatomic,strong) NSMutableArray * customDelegateArray;
 
-@property (nonatomic,weak) UIScrollView * backScrollView;
 
-@property (nonatomic,weak) UIView * fakeNavibar;
 
 /**
  *  当前显示在屏幕当中的控制器
@@ -254,7 +257,7 @@ static const CGFloat KtoolViewHeight = 30;
 }
 
 #pragma mark - Dynamic的代理方法
-//// 结束
+// 结束
 - (void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator{
     self.gesTurePaing = NO;
 }
@@ -277,5 +280,16 @@ static const CGFloat KtoolViewHeight = 30;
     [self.backScrollView scrollRectToVisible:needShowRect animated:animate];
    
 }
+
+
+#pragma  mark - 移除监听
+- (void)dealloc{
+    
+    for (zhnBaseViewController * contentVC in self.childViewControllers) {
+        [contentVC.tableView removeObserver:self forKeyPath:@"contentOffset" context:(__bridge void * _Nullable)(contentVC.tableView)];
+    }
+    
+}
+
 
 @end
