@@ -170,6 +170,7 @@ static const CGFloat KtoolViewHeight = 30;
         
         CGPoint changePoint = [pan locationInView:self.view];
         CGFloat delta = startPoint.y - changePoint.y;
+        
         if (delta < 0) {
             
             [UIView animateWithDuration:0.15 animations:^{
@@ -177,8 +178,11 @@ static const CGFloat KtoolViewHeight = 30;
             }];
             
         }else{
-            
             CGFloat speed = [pan velocityInView:self.view].y;
+            // ios 10 莫名speed特别大的时候貌似speed就变0了，具体原因google了也没google出来
+            if (speed == 0) {
+                speed = -2500;
+            }
             // 速度快于某个值才能响应事件
             if (speed < - 100) {
                 // 这里算是这个库非常非常重要的一点了
@@ -196,8 +200,12 @@ static const CGFloat KtoolViewHeight = 30;
                     }else{
                         self.noticeView.center = CGPointMake(currentPoint.x, - KtoolViewHeight);
                     }
-                    self.currentShowContentController.tableView.contentOffset = CGPointMake(0, -item.center.y - (self.bannerViewHeight/2));
-            
+                    CGFloat currentY =  - item.center.y - (self.bannerViewHeight/2);
+                    if (currentY > self.currentShowContentController.tableView.contentSize.height - KviewHeight) {
+                        
+                    }else{
+                        self.currentShowContentController.tableView.contentOffset = CGPointMake(0, -item.center.y - (self.bannerViewHeight/2));
+                    }
                 };
                 [self.animator addBehavior:inertialBehavior];
             }
