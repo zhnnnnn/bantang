@@ -179,10 +179,11 @@ static const CGFloat KtoolViewHeight = 30;
             
         }else{
             CGFloat speed = [pan velocityInView:self.view].y;
-            // ios 10 莫名speed特别大的时候貌似speed就变0了，具体原因google了也没google出来
-            if (speed == 0) {
-                speed = -2500;
-            }
+            // 模拟器你用力拖动的时候speed会变成0,真机测试没问题
+//            if (speed == 0) {
+//                speed = -2500;
+//            }
+            
             // 速度快于某个值才能响应事件
             if (speed < - 100) {
                 // 这里算是这个库非常非常重要的一点了
