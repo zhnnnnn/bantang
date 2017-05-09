@@ -172,10 +172,9 @@ static const CGFloat KtoolViewHeight = 30;
         CGFloat delta = startPoint.y - changePoint.y;
         
         if (delta < 0) {
-            
-            [UIView animateWithDuration:0.15 animations:^{
+            [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                 self.currentShowContentController.tableView.contentOffset = CGPointMake(0, - self.bannerViewHeight);
-            }];
+            } completion:nil];
             
         }else{
             CGFloat speed = [pan velocityInView:self.view].y;
@@ -236,7 +235,6 @@ static const CGFloat KtoolViewHeight = 30;
 #pragma mark - tableView的代理
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     if (![scrollView isKindOfClass:[UITableView class]]) {
-        
         for (zhnBaseViewController * tempVC in self.childViewControllers) {
             if (![tempVC isEqual:self.currentShowContentController]) {
                  tempVC.tableView.contentOffset = CGPointMake(0, self.contentoffSetY);
@@ -246,15 +244,11 @@ static const CGFloat KtoolViewHeight = 30;
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    
     if (![scrollView isKindOfClass:[UITableView class]]) {
-        
         int currentIndex = scrollView.contentOffset.x / KviewWidth;
-        
         if ([self.delegate respondsToSelector:@selector(zhnContainerContentScrollToIndex:)]) {
             [self.delegate zhnContainerContentScrollToIndex:currentIndex];
         }
-        
         self.currentShowContentController = self.childViewControllers[currentIndex];
     }
 }
