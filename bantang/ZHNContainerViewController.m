@@ -22,52 +22,47 @@ static const CGFloat KtoolViewHeight = 30;
 @interface ZHNContainerViewController ()<UIScrollViewDelegate,UIDynamicAnimatorDelegate,UITableViewDelegate,zhnToolViewDelegate>
 
 @property (nonatomic,weak) UIView * noticeView;
-
 @property (nonatomic,weak) UIScrollView * backScrollView;
-
 @property (nonatomic,weak) UIView * fakeNavibar;
-
 @property (nonatomic,assign) CGFloat contentoffSetY;
-
 @property (nonatomic,strong) UIDynamicAnimator * animator;
-
 @property (nonatomic,getter = isGesTurePaing) BOOL gesTurePaing;
-
 @property (nonatomic,strong) NSMutableArray * customDelegateArray;
-
-
-
-/**
- *  当前显示在屏幕当中的控制器
- */
 @property (nonatomic,weak) zhnBaseViewController * currentShowContentController;
+@property (nonatomic,assign) BOOL isPushed;
 
 @end
 
 @implementation ZHNContainerViewController
 
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.contentoffSetY = - self.bannerViewHeight ;
-    self.navigationController.navigationBarHidden = YES;
+    
     // 动力学动画
     UIDynamicAnimator * animator = [[UIDynamicAnimator alloc]init];
     animator.delegate = self;
     self.animator = animator;
     
-
     [self initContentViewController];
     
     [self initBannerView];
     
     [self initNaViBar];
- 
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    
     [super viewWillAppear:animated];
+    self.isPushed = NO;
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.isPushed = YES;
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
 
 
@@ -103,7 +98,6 @@ static const CGFloat KtoolViewHeight = 30;
             self.currentShowContentController = tempVC;
         }
     }
-    
 }
 
 
@@ -127,10 +121,8 @@ static const CGFloat KtoolViewHeight = 30;
     toolView.tintColor = [UIColor redColor];
     toolView.zhnDelegate = self;
     
-    
     UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panTheView:)];
     [carSoulView addGestureRecognizer:pan];
-    
 }
 
 - (void)initNaViBar{
@@ -141,7 +133,10 @@ static const CGFloat KtoolViewHeight = 30;
     naviBar.frame = CGRectMake(0, 0, KviewWidth, 64);
     self.fakeNavibar = naviBar;
     naviBar.alpha = 0;
-    
+}
+
+- (void)pushAction {
+    [self.navigationController pushViewController:[[UIViewController alloc]init] animated:YES];
 }
 
 
@@ -214,7 +209,7 @@ static const CGFloat KtoolViewHeight = 30;
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
-    
+    if (self.isPushed) {return;}
     if (context) {
         zhnBaseViewController * vc = (__bridge zhnBaseViewController *)context;
         
@@ -277,21 +272,18 @@ static const CGFloat KtoolViewHeight = 30;
     for (zhnBaseViewController * tempVC in self.childViewControllers) {
         tempVC.tableView.contentOffset =  CGPointMake(0, self.contentoffSetY);
     }
-    
-    
     CGRect needShowRect = CGRectMake(index * KviewWidth, 0, KviewWidth, KviewHeight);
     [self.backScrollView scrollRectToVisible:needShowRect animated:animate];
-   
 }
 
 
 #pragma  mark - 移除监听
-- (void)dealloc{
-    
-    for (zhnBaseViewController * contentVC in self.childViewControllers) {
-        [contentVC.tableView removeObserver:self forKeyPath:@"contentOffset" context:(__bridge void * _Nullable)(contentVC.tableView)];
+- (void)dealloc{    
+    for (UIViewController * contentVC in self.childViewControllers) {
+        if ([contentVC isKindOfClass:[zhnBaseViewController class]]) {
+            [[(zhnBaseViewController *)contentVC tableView] removeObserver:self forKeyPath:@"contentOffset" context:(__bridge void * _Nullable)([(zhnBaseViewController *)contentVC tableView] )];
+        }
     }
-    
 }
 
 
