@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZHNContainerViewController.h"
-#import "ceshiViewController.h"
+#import "TestViewController.h"
 
 
 @interface AppDelegate ()
@@ -25,7 +25,7 @@
     
     
     ZHNContainerViewController * mainVC = [[ZHNContainerViewController alloc]init];
-    mainVC.contentViewControllerArray = @[[ceshiViewController class],[ceshiViewController class],[ceshiViewController class],[ceshiViewController class],[ceshiViewController class],[ceshiViewController class],[ceshiViewController class],[ceshiViewController class],[ceshiViewController class]];
+    mainVC.contentViewControllerArray = @[[TestViewController class],[TestViewController class],[TestViewController class],[TestViewController class],[TestViewController class],[TestViewController class],[TestViewController class],[TestViewController class],[TestViewController class]];
     mainVC.bannerViewHeight = 200;
     mainVC.bannerImageArray = @[@"http://a1.hoopchina.com.cn/attachment/Day_091231/176_2698549_edf68aafc659ca6.jpg",@"http://wenwen.soso.com/p/20090316/20090316192531-1838945174.jpg",@"http://img4.imgtn.bdimg.com/it/u=1196012006,634290422&fm=21&gp=0.jpg",@"http://img1.gtimg.com/2/275/27542/2754231_500x500_0.jpg",@"http://f1.diyitui.com/63/b1/b6/64/ea/5d/1b/d9/a1/bf/f8/84/6e/e4/ab/4e.jpg"];
     mainVC.toolTitleArray = @[@"美容",@"养生",@"popular",@"古典",@"吉他",@"詹姆斯",@"科比",@"shane",@"luan"];

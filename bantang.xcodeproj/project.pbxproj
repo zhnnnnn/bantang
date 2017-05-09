@@ -17,9 +17,9 @@
 		CD756EA41D25121A00CD4A15 /* delegateContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD756EA31D25121A00CD4A15 /* delegateContainer.m */; };
 		CD756EA71D25190300CD4A15 /* ZHNContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD756EA61D25190300CD4A15 /* ZHNContainerViewController.m */; };
 		CD756EAA1D251B0D00CD4A15 /* zhnBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD756EA91D251B0D00CD4A15 /* zhnBaseViewController.m */; };
-		CD756EAD1D254F6900CD4A15 /* ceshiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD756EAC1D254F6900CD4A15 /* ceshiViewController.m */; };
 		CD756EB01D25618800CD4A15 /* zhnToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD756EAF1D25618800CD4A15 /* zhnToolView.m */; };
 		CD7B34471D2654E800597279 /* tempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7B34461D2654E800597279 /* tempViewController.m */; };
+		CD7FE2901EC163D8004D6C3B /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FE28F1EC163D8004D6C3B /* TestViewController.m */; };
 		DF146513A3467C1F1A3B7D6A /* libPods-bantang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4D092541D21F1C0CB358F7 /* libPods-bantang.a */; };
 /* End PBXBuildFile section */
 
@@ -56,20 +56,20 @@
 		CD756DD91D223CC900CD4A15 /* bantangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bantangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD756DDD1D223CC900CD4A15 /* bantangUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bantangUITests.m; sourceTree = "<group>"; };
 		CD756DDF1D223CC900CD4A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD756E9F1D24FE4E00CD4A15 /* dynamicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dynamicItem.h; path = ../dynamicItem.h; sourceTree = "<group>"; };
-		CD756EA01D24FE4E00CD4A15 /* dynamicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = dynamicItem.m; path = ../dynamicItem.m; sourceTree = "<group>"; };
-		CD756EA21D25121A00CD4A15 /* delegateContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = delegateContainer.h; path = ../delegateContainer.h; sourceTree = "<group>"; };
-		CD756EA31D25121A00CD4A15 /* delegateContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = delegateContainer.m; path = ../delegateContainer.m; sourceTree = "<group>"; };
-		CD756EA51D25190300CD4A15 /* ZHNContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHNContainerViewController.h; path = ../ZHNContainerViewController.h; sourceTree = "<group>"; };
-		CD756EA61D25190300CD4A15 /* ZHNContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHNContainerViewController.m; path = ../ZHNContainerViewController.m; sourceTree = "<group>"; };
-		CD756EA81D251B0D00CD4A15 /* zhnBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zhnBaseViewController.h; path = ../zhnBaseViewController.h; sourceTree = "<group>"; };
-		CD756EA91D251B0D00CD4A15 /* zhnBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zhnBaseViewController.m; path = ../zhnBaseViewController.m; sourceTree = "<group>"; };
-		CD756EAB1D254F6900CD4A15 /* ceshiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshiViewController.h; sourceTree = "<group>"; };
-		CD756EAC1D254F6900CD4A15 /* ceshiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshiViewController.m; sourceTree = "<group>"; };
-		CD756EAE1D25618800CD4A15 /* zhnToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zhnToolView.h; path = ../zhnToolView.h; sourceTree = "<group>"; };
-		CD756EAF1D25618800CD4A15 /* zhnToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = zhnToolView.m; path = ../zhnToolView.m; sourceTree = "<group>"; };
+		CD756E9F1D24FE4E00CD4A15 /* dynamicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dynamicItem.h; sourceTree = "<group>"; };
+		CD756EA01D24FE4E00CD4A15 /* dynamicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dynamicItem.m; sourceTree = "<group>"; };
+		CD756EA21D25121A00CD4A15 /* delegateContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = delegateContainer.h; sourceTree = "<group>"; };
+		CD756EA31D25121A00CD4A15 /* delegateContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = delegateContainer.m; sourceTree = "<group>"; };
+		CD756EA51D25190300CD4A15 /* ZHNContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNContainerViewController.h; sourceTree = "<group>"; };
+		CD756EA61D25190300CD4A15 /* ZHNContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNContainerViewController.m; sourceTree = "<group>"; };
+		CD756EA81D251B0D00CD4A15 /* zhnBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhnBaseViewController.h; sourceTree = "<group>"; };
+		CD756EA91D251B0D00CD4A15 /* zhnBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhnBaseViewController.m; sourceTree = "<group>"; };
+		CD756EAE1D25618800CD4A15 /* zhnToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhnToolView.h; sourceTree = "<group>"; };
+		CD756EAF1D25618800CD4A15 /* zhnToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhnToolView.m; sourceTree = "<group>"; };
 		CD7B34451D2654E800597279 /* tempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tempViewController.h; sourceTree = "<group>"; };
 		CD7B34461D2654E800597279 /* tempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tempViewController.m; sourceTree = "<group>"; };
+		CD7FE28E1EC163D8004D6C3B /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		CD7FE28F1EC163D8004D6C3B /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		CE8E5524090C186386CC8DFD /* Pods-bantang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bantang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bantang/Pods-bantang.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,11 +134,11 @@
 			children = (
 				CD756DBB1D223CC900CD4A15 /* AppDelegate.h */,
 				CD756DBC1D223CC900CD4A15 /* AppDelegate.m */,
-				CD756EAB1D254F6900CD4A15 /* ceshiViewController.h */,
-				CD756EAC1D254F6900CD4A15 /* ceshiViewController.m */,
 				CD7B34451D2654E800597279 /* tempViewController.h */,
 				CD7B34461D2654E800597279 /* tempViewController.m */,
-				CD756EB11D2568A600CD4A15 /* ZHNcontainerViewController */,
+				CD7FE28E1EC163D8004D6C3B /* TestViewController.h */,
+				CD7FE28F1EC163D8004D6C3B /* TestViewController.m */,
+				CD7FE28D1EC163BD004D6C3B /* ZHNcontainerViewController */,
 				CD756DC41D223CC900CD4A15 /* Assets.xcassets */,
 				CD756DC61D223CC900CD4A15 /* LaunchScreen.storyboard */,
 				CD756DC91D223CC900CD4A15 /* Info.plist */,
@@ -173,7 +173,7 @@
 			path = bantangUITests;
 			sourceTree = "<group>";
 		};
-		CD756EB11D2568A600CD4A15 /* ZHNcontainerViewController */ = {
+		CD7FE28D1EC163BD004D6C3B /* ZHNcontainerViewController */ = {
 			isa = PBXGroup;
 			children = (
 				CD756EA51D25190300CD4A15 /* ZHNContainerViewController.h */,
@@ -187,7 +187,7 @@
 				CD756E9F1D24FE4E00CD4A15 /* dynamicItem.h */,
 				CD756EA01D24FE4E00CD4A15 /* dynamicItem.m */,
 			);
-			path = ZHNcontainerViewController;
+			name = ZHNcontainerViewController;
 			sourceTree = "<group>";
 		};
 		F547831149C0C97B8A8B4F1C /* Pods */ = {
@@ -382,11 +382,11 @@
 			files = (
 				CD756DBD1D223CC900CD4A15 /* AppDelegate.m in Sources */,
 				CD756EB01D25618800CD4A15 /* zhnToolView.m in Sources */,
-				CD756EAD1D254F6900CD4A15 /* ceshiViewController.m in Sources */,
 				CD756DBA1D223CC900CD4A15 /* main.m in Sources */,
 				CD7B34471D2654E800597279 /* tempViewController.m in Sources */,
 				CD756EAA1D251B0D00CD4A15 /* zhnBaseViewController.m in Sources */,
 				CD756EA41D25121A00CD4A15 /* delegateContainer.m in Sources */,
+				CD7FE2901EC163D8004D6C3B /* TestViewController.m in Sources */,
 				CD756EA71D25190300CD4A15 /* ZHNContainerViewController.m in Sources */,
 				CD756EA11D24FE4E00CD4A15 /* dynamicItem.m in Sources */,
 			);

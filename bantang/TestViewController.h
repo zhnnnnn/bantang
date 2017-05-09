@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface TestViewController : UIViewController
+#import "zhnBaseViewController.h"
+@interface TestViewController : zhnBaseViewController   
 
 @end
